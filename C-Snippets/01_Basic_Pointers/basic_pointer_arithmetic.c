@@ -17,7 +17,7 @@ int main() {
     printf("Next year, you are %d years old", age);
 }
 
-void birthday(int *age // Declare the input variable as address){
+void birthday(int *age){ // Declare the input variable as address
     // pass by reference
     (*age)++;
 }
