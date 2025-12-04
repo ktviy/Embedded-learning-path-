@@ -3,21 +3,25 @@
 // pointer - A variable that stores the memory address of another variable
 // Benefit: save memory by passing the address of a large data structure instead of copying the entire structure
 
-void birthday(int *age);
+float sensor_data[] = {1, 2, 3, 4, 5}; // Fixed sensor data 
 
-int main() {
-    int age = 0;
-    printf("Enter your age: ");
-    scanf("%d", &age);
+float *data = &sensor_data[0];  // pointer to the first element of the array
 
-    int *pAge = &age;
+void process_sensor_data(float* data, int size);
 
-    birthday(pAge);
-    
-    printf("Next year, you are %d years old", age);
+int main(){
+    process_sensor_data(data, sizeof(sensor_data)/sizeof(sensor_data[0]));
+    return 0;
 }
 
-void birthday(int *age){ // Declare the input variable as address
-    // pass by reference
-    (*age)++;
+void process_sensor_data(float *data, int size){
+    printf("Processing sensor data\n");
+    float sum = 0.0f;
+
+    for (int i = 0; i < size; i++){
+        sum += *(data + i); // dereferencing pointer to access array elements
+        printf("Address of data: %p, Value: %f\n", (data + i), *(data + i));
+    }
+
+    printf("Total Sum: %.f\n", sum);
 }
