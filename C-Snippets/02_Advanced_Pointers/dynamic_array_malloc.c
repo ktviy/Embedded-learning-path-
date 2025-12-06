@@ -8,32 +8,25 @@ typedef struct {
     float value_sensor;
 } Sensor_record; 
 
-// Function to create a dynamic buffer for Sensor_record
-
-Sensor_record* create_dynamic_buffer(int count){
-    Sensor_record *buffer = (Sensor_record*)malloc(count * sizeof(Sensor_record));
-    if (buffer == NULL){
-        printf("Memory allocation failed\n");
-        return NULL;
-    }
-    return buffer;
-}
-
 void sensor_info(Sensor_record *sensor, int count);
 
 int main(){
 
     int count = 2; 
 
-    Sensor_record *data_buffer = create_dynamic_buffer(count);
+    // Dynamic memory allocation for Sensor_record
+
+    Sensor_record *data_buffer = (Sensor_record*)malloc(count * sizeof(Sensor_record));
 
     // Free the dynamic memory allocated for Sensor_record
-    if (data_buffer != NULL){
-        free(data_buffer);
-        data_buffer = NULL;
+    if (data_buffer = NULL){
+        printf("Memory allocation failed.\n");
+        return 1;
+    } 
+    free(data_buffer); // returning the allocated memory back to the system
+    data_buffer = NULL; // Avoid dangling pointer
 
-        printf("Dynamic memory for Sensor_record has been freed.\n");
-    }
+    printf("Dynamic memory for Sensor_record has been freed.\n");
 
     Sensor_record lists[count];
     Sensor_record *sensor_data = &lists[0];
