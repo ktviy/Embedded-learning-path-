@@ -23,10 +23,6 @@ int main(){
         printf("Memory allocation failed.\n");
         return 1;
     } 
-    free(data_buffer); // returning the allocated memory back to the system
-    data_buffer = NULL; // Avoid dangling pointer
-
-    printf("Dynamic memory for Sensor_record has been freed.\n");
 
     Sensor_record lists[count];
     Sensor_record *sensor_data = &lists[0];
@@ -46,6 +42,11 @@ int main(){
     }
 
     sensor_info(sensor_data, count);
+
+    free(data_buffer); // returning the allocated memory back to the system
+    data_buffer = NULL; // Avoid dangling pointer
+
+    printf("Dynamic memory for Sensor_record has been freed.\n");
 
     return 0; 
 }
