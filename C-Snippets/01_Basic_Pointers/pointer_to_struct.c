@@ -22,7 +22,8 @@ int main(){
     for (int i = 0; i < count; i++){
         printf("Enter the information of Sensor %d\n", i + 1);
 
-        getchar();
+        getchar(); // clear the newline from scanf of taking count 
+
         printf("Name of Sensor: ");
         fgets(lists[i].name_sensor, sizeof(lists[i].name_sensor), stdin);
         lists[i].name_sensor[strlen(lists[i].name_sensor) - 1] = '\0';
@@ -46,9 +47,8 @@ void sensor_info(Sensor_record *sensor, int count){
         printf("Sensor %d\n", i + 1);
         printf("Name of Sensor: %s\n", sensor[i].name_sensor); // Using array notation
         printf("ID of Sensor: %d\n", (sensor + i)->id_sensor); // Using pointer arithmetic 
-        printf("Value of Sensor: %.2f\n", (*sensor).value_sensor); // Dereferencing pointer
+        printf("Value of Sensor: %.2f\n", (*(sensor+i)).value_sensor); // Dereferencing pointer
 
         printf("\n");
     }
 }
-
