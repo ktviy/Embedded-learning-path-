@@ -1,7 +1,7 @@
 # C-Snippets: Fundamental C Programming for Low-Level Systems
 
 ## Introduction
-The repository contains C code snippets that focus on foundational concepts, especially **Pointers** and **Dynamic Memory Allocation**. Each file focuses on simulating each phase of embedded software development. 
+The repository contains C code snippets that focus on foundational concepts, especially **Pointers** and **Dynamic Memory Allocation**. Each file focuses on simulating each phase of embedded software development. Each file is a gradually upgraded version that reflects the knowledge system of the same program. The idea of ​​the original code is to receive sensor data and print it to the screen.
 
 ## Technical value
 1. **Manual Memory Management:** `malloc()`, `calloc()`, `realloc()`, và `free()` - allocate and free memory on the Heap.
