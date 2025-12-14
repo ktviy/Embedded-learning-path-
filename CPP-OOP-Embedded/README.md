@@ -1,6 +1,6 @@
 # CPP-OOP-Embedded: C++ OOP and Bitwise Operations for Embedded Systems
 
-## Technical goal
+## Introduction
 This repository shows the switch between high-level programming (C++ OOP) and low-level programming (Bitwise C), which is fundamental to hardware/software co-design 
 
 ## Core skills
