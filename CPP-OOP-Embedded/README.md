@@ -11,4 +11,4 @@ This repository shows the switch between high-level programming (C++ OOP) and lo
 |Folder| Key point | Link with project |
 | :---| :--- | :---|
 | '-01_C++_Simple_OOP' | Classes, Constructors/ Destructors, Encapsulation|
-|'O2_C_Embedded_Bitwise' | Bitwise Operators (&, \|, ^, << >>) |
+|'O2_C_Embedded_Bitwise' | Bitwise Operators (&, \| , ^, <<, >>) |
