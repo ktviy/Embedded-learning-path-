@@ -1,1 +1,39 @@
+I. Architecture overview
+  The Hack architecture is a 16-bit Von Neumann system, consisting of a CPU, two separate memory entities (Instruction Memory and Data Memory), and two main registers.
+
+II. Registers
+*  A-register: stores both data and memory addresses
+*  D-register: stores the data
+* M (Memory): represents the memory location in RAM whose address is currently stored in register A (RAM[A])
+
+III. Instructions
+1. A-instruction - Address assignment command
+
+@value -> A = value
+@sum -> A = address of variable sum
+
+2. C-instruction (16 bits) - Control command
+Used for performing ALU calculations and branching
+
++ a & cccccc: Bits control ALU (determine the operations)
++ ddd (Destination): Stores the result
++ jjj (Jump): Controls jump (JGT, JEQ, JGE, JLT, JNE, JLE, JMP)
+
+
+** Operations
+a/ D=M -> read only
+
+b/ M=D -> write the value from D to RAM
+   eg: @10 // A = 10
+       M=A // RAM[10] = 10
+
+c/ M=A -> Assign the number directly, write value A in the address A points to
+   eg: @21 // A = 21
+       D=A // D = 21
+
+d/ D=A -> Copy value in A to D
+
+
+
+
 
