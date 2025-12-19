@@ -3,7 +3,7 @@
 ## Introduction
 This repository shows the switch between high-level programming (C++ OOP) and low-level programming (Bitwise C), which is fundamental to hardware/software co-design 
 
-## Core skills
+## Technical Value
 1. **C++ Object-Oriented Programming (OOP):** use 'Classes', 'Constructors/Destructors', and 'Encapsulation', to build complex models
 2. **Bitwise Operations:** Directly manipulating individual bits
 
