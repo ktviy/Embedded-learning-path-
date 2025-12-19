@@ -7,7 +7,7 @@ The goal of this repository is to demonstrate the fundamental knowledge required
 * **Boolean Logic Design:** Implementing elementary gates (And, Or, Not, Xor, Mux,...) using only NAND gates as the foundational building block
 * **Arithmetic Logic Unit (ALU):** Designing a functional ALU 
 * **Sequential Logic & State:** Implementing Bit, Register, and some version of RAM and the Program Counter (PC) for instruction flow control
-* **ISA & Low-level Programming:** 
+* **ISA & Low-level Programming** 
 
 ## Folder Structure
 | Folder | Key Point | Link with Project |
