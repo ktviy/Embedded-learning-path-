@@ -11,7 +11,7 @@ The repository contains C code snippets that focus on foundational concepts, esp
 ## Directory folder
 
 | Folder | Key point | 
-| :--- | :--- | :--- |
+| :--- | :--- | 
 | `01_Basic_Pointers` | Pointer, Reference, and Dereference operators |
 | `02_Dynamic_Memory` | Flexible data structure |
 | `03_Function_Pointers`| Function pointer, Simulates Callbacks/Interrupts mechanism | 
