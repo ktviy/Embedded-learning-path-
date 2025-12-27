@@ -8,7 +8,7 @@ This repository shows the switch between high-level programming (C++ OOP) and lo
 2. **Bitwise Operations:** Directly manipulating individual bits
 
 ## Folder structure 
-|Folder| Key point | Link with project |
-| :---| :--- | :---|
+|Folder| Key point | 
+| :---| :--- |
 | '-01_C++_Simple_OOP' | Classes, Constructors/ Destructors, Encapsulation|
 |'O2_C_Embedded_Bitwise' | Bitwise Operators (&, \| , ^, <<, >>) |
