@@ -10,12 +10,12 @@ The goal of this repository is to demonstrate the fundamental knowledge required
 * **ISA & Low-level Programming** 
 
 ## Folder Structure
-| Folder | Key Point | Link with Project |
-| :--- | :--- | :--- |
-| **01_Combinational_Logic** | Nand-to-All, Mux/DMux, 16-bit Bus | The foundation of data routing in a CPU |
-| **02_Arithmetic_Logic_Unit** | Half/Full Adders and the complete ALU | The computational core of the processor |
-| **03_Sequential_Logic** | Bit, Registers, RAM, and Program Counter | Memory hierarchy and system state management. |
-| **04_ISA_and_Assembly** | Machine Language Key point and .asm programs | The bridge between hardware and software. |
+| Folder | Key Point |
+| :--- | :--- | 
+| **01_Combinational_Logic** | Nand-to-All, Mux/DMux, 16-bit Bus | 
+| **02_Arithmetic_Logic_Unit** | Half/Full Adders and ALU | 
+| **03_Sequential_Logic** | Bit, Registers, RAM, and Program Counter | 
+| **04_ISA_and_Assembly** | Machine Language Key point and .asm programs | 
 
 
 
